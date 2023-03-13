@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+  <title>Mobile Web Test Page</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header>
+      <div class="inner-layout">
+        <div id="lnb" class="header-lnb">
+          <ul>
+            <li><a href="#menu1">menu1</a></li>
+            <li><a href="#menu2">menu2</a></li>
+            <li><a href="#menu3">menu3</a></li>
+            <li><a href="#menu4">menu4</a></li>
+          </ul>
+        </div>
+        <div class="header-title">
+          <h1>
+            <span class="font__jp">串揚げ 眞</span>
+            <strong><small>쿠시아게 진</small></strong>
+          </h1>
+          <div id="headerMenuBtn">
+            <i class='bx bxs-chevron-down'></i>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const headerMenuBtn = document.getElementById('headerMenuBtn');
+        const header = headerMenuBtn.parentElement.parentElement.parentElement;
+        headerMenuBtn.addEventListener('click', function() {
+          headerMenuBtn.classList.toggle('active');
+          document.getElementById('lnb').classList.toggle('active');
+          header.classList.toggle('active');
+        })
+      </script>
+    </header>
+
+    <section class="intro-section">
+      Intro Section
+    </section>
+
+    <section class="menu-section" id="menu1">
+      <div class="menu-img">
+        <img src="" alt="">
+      </div>
+      <div class="menu-desc">
+        <div class="inner-layout">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum labore quos eius rerum dolore, repellat
+            laudantium, beatae inventore nihil libero quasi quas, eum ratione reiciendis. Provident, laudantium.
+            Similique, consectetur quo?</p>
+        </div>
+      </div>
+    </section>
+    <section class="menu-section" id="menu2">
+      <div class="menu-img">
+        <img src="" alt="">
+      </div>
+      <div class="menu-desc">
+        <div class="inner-layout">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum labore quos eius rerum dolore, repellat
+            laudantium, beatae inventore nihil libero quasi quas, eum ratione reiciendis. Provident, laudantium.
+            Similique, consectetur quo?</p>
+        </div>
+      </div>
+    </section>
+    <section class="menu-section" id="menu3">
+      <div class="menu-img">
+        <img src="" alt="">
+      </div>
+      <div class="menu-desc">
+        <div class="inner-layout">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum labore quos eius rerum dolore, repellat
+            laudantium, beatae inventore nihil libero quasi quas, eum ratione reiciendis. Provident, laudantium.
+            Similique, consectetur quo?</p>
+        </div>
+      </div>
+    </section>
+    <section class="menu-section" id="menu4">
+      <div class="menu-img">
+        <img src="" alt="">
+      </div>
+      <div class="menu-desc">
+        <div class="inner-layout">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum labore quos eius rerum dolore, repellat
+            laudantium, beatae inventore nihil libero quasi quas, eum ratione reiciendis. Provident, laudantium.
+            Similique, consectetur quo?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="test-section">
+      <div class="inner-layout">
+        <h2>Text test 글꼴 테스트 串揚げ 眞</h2>
+        <h3>Text test 글꼴 테스트 串揚げ 眞</h3>
+        <h4>Text test 글꼴 테스트 串揚げ 眞</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error dolores maiores iure quibusdam iusto
+          impedit culpa voluptatibus nisi animi soluta voluptatem vero, aspernatur quod, doloremque nulla, velit omnis
+          dignissimos? 글꼴 테스트 串揚げ 眞</p>
+        <b>Text test 글꼴 테스트</b>
+        <strong>Text test 글꼴 테스트</strong>
+        <code>Text test 글꼴 테스트</code>
+      </div>
+    </section>
+
+    <footer>
+      <div class="inner-layout">
+        <div class="company-info">
+          <ul class="address">
+            <li><p>
+                <b>Address</b>
+                서울특별시 강남구 선릉로 148길 52-10 4층
+              </p></li>
+            <li><p>
+                <b>Contact</b>
+                010-3492-1957
+              </p></li>
+          </ul>
+          <ul class="sns-gnb">
+            <li>
+              <a href="#" class="ins">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
