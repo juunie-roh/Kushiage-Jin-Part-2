@@ -223,7 +223,7 @@ footer .company-info ul.sns-gnb>li>a {
 
   .menu-img {
     position: sticky;
-    top: calc(15px + var(--header-height));
+    top: calc(10px + var(--header-height));
     width: 50%;
     height: 300px;
   }
