@@ -3,9 +3,9 @@
 :root {
   --mobile-portrait-width: 460px;
   --mobile-landscape-width: 960px;
-  --iPhone-top: 50px;
-  --iPhone-bottom: 34px;
-
+  --iPhone-top: 0px;
+  --iPhone-bottom: 0px;
+  --header-height: 60px;
   --main-bg-color: #fff;
   --main-bg-alter: #777;
   --point-color: #f00;
@@ -16,7 +16,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  height: 110px;
+  height: var(--header-height);
   padding-top: var(--iPhone-top);
   border-bottom: 1px solid var(--point-color);
   background-color: #fff;
@@ -25,14 +25,14 @@ header {
 }
 
 header.active {
-  height: 600px;
+  height: 510px;
 }
 
 .header-lnb {
   position: relative;
   top: -200px;
   width: 100%;
-  height: 0px;
+  height: var(--header-height);
   padding: 0;
   overflow: hidden;
   background-color: #efefef;
@@ -118,10 +118,10 @@ section:nth-child(odd) { background-color: #fff; }
 
 .intro-section {
   width: 100%;
-  height: calc(100vh - 110px);
-  margin-top: 110px;
+  height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
   text-align: center;
-  line-height: calc(100vh - 110px);
+  line-height: calc(100vh - var(--header-height));
 
   font-size: 30px;
 }
@@ -131,13 +131,14 @@ section:nth-child(odd) { background-color: #fff; }
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 110px);
-  border: 1px solid black;
+  height: calc(100vh - var(--header-height));
+  padding-top: var(--header-height);
 }
 
 .menu-img {
   width: 100%;
   height: 300px;
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
@@ -157,7 +158,7 @@ section:nth-child(odd) { background-color: #fff; }
 
 footer {
   width: 100%;
-  height: calc(310px + var(--iPhone-bottom));
+  height: calc(210px + var(--iPhone-bottom));
   padding-bottom: var(--iPhone-bottom);
   background-color: #555;
   color: #fff;
@@ -193,8 +194,10 @@ footer .company-info ul.sns-gnb>li>a {
 }
 
 @media screen and (min-width: 461px) {
+  :root {
+    --header-height: 80px;
+  }
   header {
-    height: 80px;
     padding-top: 0;
   }
 
@@ -212,8 +215,13 @@ footer .company-info ul.sns-gnb>li>a {
     font-size: 20px;
   }
 
-  .menu-section {
+  .intro-section {
     margin-top: 80px;
+  }
+
+  .menu-section {
+    padding-top: 80px;
+    flex-direction: row;
   }
 
   .menu-img {
