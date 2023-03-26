@@ -17,12 +17,15 @@
     <header>
       <div class="inner-layout">
         <div id="lnb">
-          <ul>
-            <li><a href="#menu1">menu1</a></li>
-            <li><a href="#menu2">menu2</a></li>
-            <li><a href="#menu3">menu3</a></li>
-            <li><a href="#menu4">menu4</a></li>
-          </ul>
+          <ol>
+            <li><a href="#menu1">1. Som Tum Cucumber</a></li>
+            <li><a href="#menu2">2. Stir-fried morning glory</a></li>
+            <li><a href="#menu3">3. Tom Yum Goong</a></li>
+            <li><a href="#menu4">4. Crispy Pork, Roasted Chicken, Boneless Pork Ribs</a></li>
+            <li><a href="#menu5">5. Pad Thai / Egg Noodle with Fish Ball</a></li>
+            <li><a href="#menu6">6. Coconut</a></li>
+            <li><a href="#menu7">7. Thai Tea / Pandan Tea</a></li>
+          </ol>
         </div>
         <div class="header-title">
           <h1>
@@ -37,15 +40,7 @@
         </div>
       </div>
 
-      <script>
-        const headerMenuBtn = document.getElementById('headerMenuBtn');
-        const header = headerMenuBtn.parentElement.parentElement.parentElement;
-        headerMenuBtn.addEventListener('click', function() {
-          headerMenuBtn.classList.toggle('active');
-          document.getElementById('lnb').classList.toggle('active');
-          header.classList.toggle('active');
-        })
-      </script>
+      <script src="./js/header.js"></script>
     </header>
 
     <section class="intro-section">
@@ -92,18 +87,34 @@
         </div>
       </div>
     </section>
-
-    <section class="test-section">
-      <div class="inner-layout">
-        <h2>Text test 글꼴 테스트 串揚げ 眞</h2>
-        <h3>Text test 글꼴 테스트 串揚げ 眞</h3>
-        <h4>Text test 글꼴 테스트 串揚げ 眞</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error dolores maiores iure quibusdam iusto
-          impedit culpa voluptatibus nisi animi soluta voluptatem vero, aspernatur quod, doloremque nulla, velit omnis
-          dignissimos? 글꼴 테스트 串揚げ 眞</p>
-        <b>Text test 글꼴 테스트</b>
-        <strong>Text test 글꼴 테스트</strong>
-        <code>Text test 글꼴 테스트</code>
+    <section class="menu-section" id="menu5">
+      <div class="menu-img">
+        <img src="" alt="">
+      </div>
+      <div class="menu-desc">
+        <div class="inner-layout">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis autem molestiae architecto ullam exercitationem, officia perferendis. Quibusdam nesciunt quia accusamus quos explicabo? Consectetur ut rerum assumenda, excepturi libero ab laborum?
+        </div>
+      </div>
+    </section>
+    <section class="menu-section" id="menu6">
+      <div class="menu-img">
+        <img src="" alt="">
+      </div>
+      <div class="menu-desc">
+        <div class="inner-layout">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis autem molestiae architecto ullam exercitationem, officia perferendis. Quibusdam nesciunt quia accusamus quos explicabo? Consectetur ut rerum assumenda, excepturi libero ab laborum?
+        </div>
+      </div>
+    </section>
+    <section class="menu-section" id="menu7">
+      <div class="menu-img">
+        <img src="" alt="">
+      </div>
+      <div class="menu-desc">
+        <div class="inner-layout">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis autem molestiae architecto ullam exercitationem, officia perferendis. Quibusdam nesciunt quia accusamus quos explicabo? Consectetur ut rerum assumenda, excepturi libero ab laborum?
+        </div>
       </div>
     </section>
 

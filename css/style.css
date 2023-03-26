@@ -9,7 +9,7 @@
 }
 
 /* header */
-header.active { height: 510px; }
+header.active { height: 100vh; }
 header {
   position: fixed;
   left: 0;
@@ -32,8 +32,8 @@ header {
   background-color: #efefef;
   transition: 0.3s ease-out;
 }
-#lnb.active { top: 10px; padding: 50px; height: 450px; }
-#lnb ul {
+#lnb.active { top: 10px; padding: 20px; height: calc(100% - var(--header-height)); }
+#lnb ol {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -45,24 +45,25 @@ header {
   overflow: hidden;
   background-color: #ddd;
 }
-#lnb ul li {
+#lnb ol li {
   display: block;
-  width: 8em;
-  height: 2em;
-  border-radius: 1em;
+  width: 100%;
+  padding: 0.5em 1em;
+  border-radius: 2em;
   background-color: #aaa;
+  white-space: nowrap;
+  overflow-x: scroll;
 
-  text-indent: 1em;
   line-height: 2em;
 }
+#lnb ol li a { width: 100%; font-size: 20px; }
 
 .header-title {
-  position: absolute;
-  bottom: 0;
+  position: absolute; bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 .header-title>h1 span {
   color: var(--point-color);
@@ -119,25 +120,26 @@ section:nth-child(odd) { background-color: #fff; }
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 150vh;
-  padding-top: calc(15px + var(--header-height));
+  height: 100vh;
+  padding-top: var(--header-height);
 }
 
 .menu-img {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 400px;
+  position: relative; top: 0;
+  width: 100%; height: 400px;
   border: 1px solid black;
 }
 
-.menu-desc { display: block; }
+.menu-desc { 
+  display: block; 
+  padding: 40px 0;
+}
 
 .inner-layout {
   position: relative;
   /* width: 100%; */
   height: 100%;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .test-section {
@@ -198,9 +200,7 @@ footer .company-info ul.address>li>p {
   }
 
   .menu-desc { width: 50%; }
-
   .inner-layout { margin: 0 var(--iPhone-top); }
-
   .test-section { padding-top: 50px; }
 
   footer { height: 200px; padding-bottom: 0; }
