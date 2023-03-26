@@ -135,6 +135,9 @@ section:nth-child(odd) { background-color: #fff; }
   padding: 40px 0;
 }
 
+.menu-desc h2 { margin-left: 10px; font-size: 28px; }
+.menu-desc h2 small { margin-left: 10px; font-size: 16px; font-weight: 900; }
+
 .inner-layout {
   position: relative;
   /* width: 100%; */
@@ -180,11 +183,11 @@ footer .company-info ul.address>li>p {
     --header-height: 52px;
   }
 
-  header.active { height: 300px; }
+  header.active { height: 100vh; }
   header { padding-top: 0; }
-  #lnb.active { top: 0px; padding: 10px 40px; height: 250px; }
+  #lnb.active { top: 0px; padding: 10px 40px; height: calc(100% - var(--header-height)); }
   #lnb { top: -100px; }
-  #lnb ul { flex-direction: row; }
+  #lnb ol { flex-direction: row; overflow-y: scroll; }
   .header-title>h1 span { font-size: 36px; font-weight: 700; }
   .header-title>h1 strong small { margin-left: 10px; font-size: 20px; }
   /* intro-section {} */
@@ -194,7 +197,7 @@ footer .company-info ul.address>li>p {
 
   .menu-img {
     position: sticky;
-    top: calc(10px + var(--header-height));
+    top: calc(18px + var(--header-height));
     width: 50%;
     height: 300px;
   }
