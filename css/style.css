@@ -161,14 +161,15 @@ footer .company-info {
   width: 100%;
 }
 footer .company-info ul.address { margin-bottom: 10px; }
-footer .company-info ul.address>li>p>b { font-size: 16px; }
-footer .company-info ul.sns-gnb>li>a { font-size: 0; }
 footer .company-info ul.address>li>p {
   color: #fff;
   font-size: 16px;
   line-height: 20px;
   text-align: justify;
 }
+footer .company-info ul.address>li>p>b { font-size: 16px; }
+
+footer .company-info ul.sns-gnb>li>a { font-size: 0; }
 /* footer end */
 
 @media screen and (min-width: 576px) {
