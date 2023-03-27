@@ -34,29 +34,22 @@ header {
 }
 #lnb.active { top: 10px; padding: 20px; height: calc(100% - var(--header-height)); }
 #lnb ol {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-
+  display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  width: 100%; height: 100%;
   overflow: hidden;
   background-color: #ddd;
 }
 #lnb ol li {
-  display: block;
+  display: flex;
   width: 100%;
-  padding: 0.5em 1em;
-  border-radius: 2em;
   background-color: #aaa;
-  white-space: nowrap;
-  overflow-x: scroll;
+  text-align: justify;
+  align-items: baseline;
 
-  line-height: 2em;
+  font-size: 28px;
+  line-height: 1.4;
 }
-#lnb ol li a { width: 100%; font-size: 20px; }
+#lnb ol li a { width: 100%; font-size: 24px; text-align: right; }
 
 .header-title {
   position: absolute; bottom: 0;
@@ -187,7 +180,10 @@ footer .company-info ul.address>li>p {
   header { padding-top: 0; }
   #lnb.active { top: 0px; padding: 10px 40px; height: calc(100% - var(--header-height)); }
   #lnb { top: -100px; }
-  #lnb ol { flex-direction: row; overflow-y: scroll; }
+  #lnb ol { flex-direction: row; }
+  #lnb ol li { font-size: 24px; }
+  #lnb ol li a { font-size: 20px; }
+  #lnb ol li a br { display: none; }
   .header-title>h1 span { font-size: 36px; font-weight: 700; }
   .header-title>h1 strong small { margin-left: 10px; font-size: 20px; }
   /* intro-section {} */
@@ -199,12 +195,11 @@ footer .company-info ul.address>li>p {
     position: sticky;
     top: calc(18px + var(--header-height));
     width: 50%;
-    height: 300px;
+    height: 78vh;
   }
 
   .menu-desc { width: 50%; }
   .inner-layout { margin: 0 var(--iPhone-top); }
-  .test-section { padding-top: 50px; }
 
   footer { height: 200px; padding-bottom: 0; }
   footer .company-info { flex-direction: row; }
