@@ -212,8 +212,8 @@ footer .company-info ul.sns-gnb>li>a { font-size: 0; }
     height: calc(100vh - var(--header-height) - 40px);
   }
 
-  .menu-desc { width: 50%; }
-  .inner-layout { margin: 0 var(--iPhone-top); }
+  .menu-desc { width: 50%; padding-top: 20px; }
+  .menu-desc .desc { margin: 20px 0; }
 
   footer { height: 200px; padding-bottom: 0; }
   footer .company-info { flex-direction: row; }
