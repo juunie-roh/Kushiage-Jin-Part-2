@@ -39,16 +39,17 @@ header {
   align-items: baseline;
   
   font-size: 28px;
-  line-height: 1.4;
+  font-weight: 500;
+  line-height: 1;
 }
 #lnb ol li a { 
   width: 100%; 
-  /* padding-right: 10px;
-  border-right: 2px solid #777;
-  border-bottom: 2px solid #777; */
   font-size: 24px; 
+  font-weight: 500;
   text-align: right; 
 }
+
+#lnb ol li a small { font-size: 16px; font-weight: 700; }
 
 .header-title {
   position: absolute; bottom: 0;
@@ -125,6 +126,8 @@ header {
 
 .menu-desc h2 { margin-left: 10px; font-size: 28px; }
 .menu-desc h2 small { margin-left: 10px; font-size: 16px; font-weight: 900; }
+.menu-desc h3 { margin: 0 10px; font-size: 16px; font-weight: 900; text-align: right; }
+.menu-desc .desc { margin: 40px 0; }
 .menu-desc a {
   position: sticky; bottom: 20px;
   display: block;
@@ -194,6 +197,7 @@ footer .company-info ul.sns-gnb>li>a { font-size: 0; }
   #lnb ol li { font-size: 24px; }
   #lnb ol li a { font-size: 20px; text-align: center; }
   #lnb ol li a br { display: none; }
+  #lnb ol li a small { font-size: 13px; font-weight: 700; }
   .header-title>h1 span { font-size: 36px; font-weight: 700; }
   .header-title>h1 strong small { margin-left: 10px; font-size: 20px; }
   /* intro-section {} */
