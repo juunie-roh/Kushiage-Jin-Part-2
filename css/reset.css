@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Extra+Condensed:ital,wght@1,500&family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@1,500&family=Black+Han+Sans&family=Noto+Sans+KR:wght@300;400;500;700&family=Zen+Antique+Soft&display=swap');
 
 
 * {
@@ -19,8 +19,9 @@ ul, ol { list-style: none; }
 b { font-family: 'Roboto', sans-serif; font-weight: 700; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bebas Neue', 'Noto Sans KR', 'Arial Narrow Bold', sans-serif;
+  font-family: 'Fira Sans Extra Condensed', 'Noto Sans KR', 'Arial Narrow Bold', sans-serif;
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .font__jp {
