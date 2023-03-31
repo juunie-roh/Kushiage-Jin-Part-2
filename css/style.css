@@ -75,7 +75,7 @@ header.active { height: 100dvh; }
   text-align: right; 
 }
 
-#lnb ol li a small { font-size: 16px; font-weight: 700; }
+#lnb ol li a small { font-size: 16px; font-weight: 700; font-style: normal; }
 
 .header-title {
   position: absolute; bottom: 0;
