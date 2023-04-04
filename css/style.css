@@ -131,6 +131,7 @@ header.active { height: 100dvh; }
 .page-wrap {
   position: relative;
   width: 100%;
+  overflow: hidden;
   color: #333;
 }
 
