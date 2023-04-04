@@ -92,11 +92,11 @@ header.active { height: 100dvh; }
 #lnb ol li a small { font-size: 16px; font-weight: 700; font-style: normal; }
 
 .header-title {
-  position: absolute; bottom: 0;
-  width: 100%;
+  position: absolute; 
+  bottom: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; align-items: center;
+  width: 100%;
 }
 .header-title>h1 span {
   color: var(--header-title);
@@ -131,7 +131,6 @@ header.active { height: 100dvh; }
 .page-wrap {
   position: relative;
   width: 100%;
-  overflow: hidden;
   color: #333;
 }
 
@@ -161,7 +160,6 @@ header.active { height: 100dvh; }
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   color: #333;
-  /* text-align: center; */
 }
 
 .menu-section {
@@ -184,38 +182,37 @@ header.active { height: 100dvh; }
   isolation: isolate;
   display: flex; flex-direction: column; 
   padding-top: 40px;
-  /* margin-bottom: var(--header-height); */
 }
 .menu-desc::before {
   content: '';
   position: absolute;
-  right: 0px; bottom: 50px;
+  right: 0px; bottom: 80px;
   z-index: -1;
   display: block;
   width: 200px; height: 100px;
   background: url(../images/lotus-flower.png) no-repeat center center / contain;
-  filter: opacity(30%) contrast(150%);
+  filter: opacity(30%) contrast(140%);
 }
 .menu-section:nth-child(even) .menu-desc::before { left: 0px; }
 
 .menu-desc h2 { margin-left: 10px; font-size: 28px; }
 .menu-desc h2 small { margin-left: 10px; font-size: 16px; font-weight: 900; }
-.menu-desc h3 { margin: 0 10px; font-size: 16px; font-weight: 900; text-align: right; }
-.menu-desc .desc { margin: 50px 0; font-weight: 600; }
+.menu-desc h3 { margin: 0 10px; font-size: 16px; font-weight: 600; text-align: right; }
+.menu-desc .desc { min-height: 150px; margin: 50px 0; font-weight: 600; }
 .menu-desc a {
-  position: sticky; bottom: 10px;
+  position: sticky; 
+  bottom: 10px;
+  align-self: center;
   display: block;
   width: 80%;
-  align-self: center;
   margin-top: 30px;
   padding: 0.5em 1em;
-  border: 2px solid #777;
   border-radius: 2em;
-  background: var(--main-point);
-  color: #6b3fa0;
+  background: var(--header-bg);
+  color: var(--main-point-alter);
   text-align: center;
 }
-.menu-desc a:hover { background: var(--main-point-alter); }
+.menu-desc a:hover { background: var(--main-point-alter); color: var(--header-bg); }
 .menu-section:last-of-type .menu-desc a { display: none; }
 
 .inner-layout {
