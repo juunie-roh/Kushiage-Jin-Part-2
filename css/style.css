@@ -4,9 +4,10 @@
   --iPhone-top: 50px;
   --header-height: 60px;
   --header-bg: #0d5e65;
-  --main-bg: #e6faf9;
-  --main-bg-alter: #ddd;
-  --point-color: #fad354;
+  --main-bg: #d1e7dd;
+  --main-point: #f7c9db;
+  --main-point-alter: #edb6ca;
+  --header-title: #ffd700;
 }
 
 /* header */
@@ -98,13 +99,13 @@ header.active { height: 100dvh; }
   align-items: center;
 }
 .header-title>h1 span {
-  color: var(--point-color);
+  color: var(--header-title);
   font-size: 40px;
   font-weight: 700;
 }
 .header-title>h1 strong small {
   margin-left: 5px;
-  color: var(--point-color);
+  color: var(--header-title);
   font-size: 16px;
   font-weight: 900;
 }
@@ -179,28 +180,41 @@ header.active { height: 100dvh; }
 
 .menu-desc { 
   position: relative;
+  isolation: isolate;
   display: flex; flex-direction: column; 
   padding-top: 40px;
   /* margin-bottom: var(--header-height); */
 }
+.menu-desc::before {
+  content: '';
+  position: absolute;
+  right: -50px; bottom: 50px;
+  z-index: -1;
+  display: block;
+  width: 200px; height: 100px;
+  background: url(../images/lotus-flower.png) no-repeat center center / contain;
+  filter: opacity(30%) contrast(150%);
+}
+.menu-section:nth-child(even) .menu-desc::before { left: -50px; }
 
 .menu-desc h2 { margin-left: 10px; font-size: 28px; }
 .menu-desc h2 small { margin-left: 10px; font-size: 16px; font-weight: 900; }
 .menu-desc h3 { margin: 0 10px; font-size: 16px; font-weight: 900; text-align: right; }
-.menu-desc .desc { margin: 40px 0; }
+.menu-desc .desc { margin: 50px 0; font-weight: 600; }
 .menu-desc a {
-  position: sticky; bottom: 20px;
+  position: sticky; bottom: 10px;
   display: block;
   width: 80%;
   align-self: center;
   margin-top: 30px;
   padding: 0.5em 1em;
-  border: 1px solid #777;
+  border: 2px solid #777;
   border-radius: 2em;
-  background: var(--main-bg-color);
+  background: var(--main-point);
+  color: #6b3fa0;
   text-align: center;
 }
-.menu-desc a:hover { background: var(--main-bg-alter); }
+.menu-desc a:hover { background: var(--main-point-alter); }
 .menu-section:last-of-type .menu-desc a { display: none; }
 
 .inner-layout {
@@ -267,14 +281,14 @@ footer .company-info ul.sns-gnb>li>a { font-size: 0; }
 
   .menu-section:nth-child(odd) { flex-direction: row; }
   .menu-section:nth-child(even) { flex-direction: row-reverse; }
-
+  
   .menu-img {
     position: sticky;
     top: calc(20px + var(--header-height));
     width: 50%;
     height: calc(100dvh - var(--header-height) - 40px);
   }
-
+  
   .menu-desc { width: 50%; padding-top: 20px; }
   .menu-desc .desc { margin: 20px 0; }
 
