@@ -189,14 +189,14 @@ header.active { height: 100dvh; }
 .menu-desc::before {
   content: '';
   position: absolute;
-  right: -50px; bottom: 50px;
+  right: 0px; bottom: 50px;
   z-index: -1;
   display: block;
   width: 200px; height: 100px;
   background: url(../images/lotus-flower.png) no-repeat center center / contain;
   filter: opacity(30%) contrast(150%);
 }
-.menu-section:nth-child(even) .menu-desc::before { left: -50px; }
+.menu-section:nth-child(even) .menu-desc::before { left: 0px; }
 
 .menu-desc h2 { margin-left: 10px; font-size: 28px; }
 .menu-desc h2 small { margin-left: 10px; font-size: 16px; font-weight: 900; }
