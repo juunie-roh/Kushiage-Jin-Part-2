@@ -153,6 +153,8 @@ header.active { height: 100dvh; }
 
 .intro-desc { 
   position: relative; 
+  display: flex; flex-direction: column;
+  justify-content: space-between;
   width: 100%; height: calc(100% - 40px);
   margin: 20px 0;
   padding: 20px;
@@ -160,6 +162,14 @@ header.active { height: 100dvh; }
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   color: #333;
+}
+
+.intro-desc .head { text-align: right; }
+.intro-desc h2 { font-size: 44px; }
+.intro-desc h2 span { font-size: 44px; font-weight: 700; }
+.intro-desc .name {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .menu-section {
@@ -276,6 +286,9 @@ footer .company-info ul.sns-gnb>li>a { font-size: 0; }
 
   .intro-section { flex-direction: column; }
   /* .intro-img { width: 50%; height: 100%; margin: 0; } */
+  .intro-desc { height: calc(100% - 29px); margin: 10px 0; padding: 10px; }
+  .intro-desc h2, .intro-desc h2 span { font-size: 28px; text-align: left; }
+  .intro-desc .head br { display: none; }
 
   .menu-section:nth-child(odd) { flex-direction: row; }
   .menu-section:nth-child(even) { flex-direction: row-reverse; }
