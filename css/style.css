@@ -153,7 +153,6 @@ header.active { height: 100dvh; }
 
 .intro-desc { 
   position: relative; 
-  overflow: hidden;
   display: flex; flex-direction: column;
   justify-content: space-between;
   width: 100%; height: calc(100% - 40px);
@@ -176,8 +175,21 @@ header.active { height: 100dvh; }
 .intro-desc .body {
   height: 100%;
 }
+.intro-desc .body p {
+  margin-bottom: 20px;
+}
+.intro-desc .body p:nth-of-type(2) {
+  text-align: right;
+}
 .intro-desc .notice {
   height: 100%;
+}
+.intro-desc .notice ul li,
+.intro-desc .notice ul li a {
+  font-size: 16px;
+}
+.intro-desc .notice ul li {
+  margin-bottom: 20px;
 }
 
 
@@ -298,6 +310,9 @@ footer .company-info ul.sns-gnb>li>a { font-size: 0; }
   .intro-desc { height: calc(100% - 29px); margin: 10px 0; padding: 10px; }
   .intro-desc .head h2, .intro-desc .head h2 span { font-size: 36px; text-align: left; }
   .intro-desc .head br { display: none; }
+  .intro-desc .body p { text-align: center; }
+  .intro-desc .body p:nth-of-type(2) { text-align: center; }
+  .intro-desc .body br { display: none; }
 
   .menu-section:nth-child(odd) { flex-direction: row; }
   .menu-section:nth-child(even) { flex-direction: row-reverse; }
