@@ -112,6 +112,7 @@ header.active { height: 100dvh; }
 
 /* headerMenuBtn */
 #headerMenuBtn {
+  display: none;
   width: 30px;
   height: 30px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -173,6 +174,7 @@ header.active { height: 100dvh; }
   font-weight: 700;
 }
 .intro-desc .body {
+  display: none;
   height: 100%;
 }
 .intro-desc .body p {
@@ -182,6 +184,7 @@ header.active { height: 100dvh; }
   text-align: right;
 }
 .intro-desc .notice {
+  display: none;
   height: 100%;
 }
 .intro-desc .notice ul li,
