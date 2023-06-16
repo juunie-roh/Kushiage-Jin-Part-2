@@ -221,6 +221,7 @@ header.active { height: 100dvh; }
   position: relative;
   isolation: isolate;
   display: flex; flex-direction: column; 
+  justify-content: center;
   padding-top: 40px;
 }
 .menu-desc::before {
@@ -235,10 +236,10 @@ header.active { height: 100dvh; }
 }
 .menu-section:nth-child(even) .menu-desc::before { left: 0px; }
 
-.menu-desc h2 { margin-left: 10px; font-size: 28px; }
-.menu-desc h2 small { margin-left: 10px; font-size: 16px; font-weight: 900; }
-.menu-desc h3 { margin: 0 10px; font-size: 16px; font-weight: 600; text-align: right; }
-.menu-desc .desc { min-height: 150px; margin: 50px 0; font-weight: 600; }
+.menu-desc h2 { margin-left: 10px; font-size: 36px; }
+.menu-desc h2 small { margin-left: 10px; font-size: 24px; font-weight: 900; }
+.menu-desc h3 { margin: 0 10px; font-size: 24px; font-weight: 600; text-align: right; }
+.menu-desc .desc { min-height: 150px; margin: 50px 0; font-size: 20px; font-weight: 600; }
 .menu-desc a {
   position: sticky; 
   bottom: 10px;
